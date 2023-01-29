@@ -11,16 +11,16 @@ PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
-#Getting user
+# Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/lizsvr/project/main/ipvps.txt | grep $MYIP | awk '{print $3}')
-if [ $MYIP = $MYIP ]; then
+IZIN=$( curl https://raw.githubusercontent.com/owl64/vpsssh_Free/main/ipvps.txt | grep $MYIP );
+if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/liz_mine"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/owl64"
 exit 0
 fi
 error1="${RED}[ERROR]${NC}"
@@ -88,7 +88,7 @@ echo -e "PublicKey              : ${slkey}"
 echo -e ""
 echo -e "======== Running On Port ======="
 echo -e "Dropbear      : 109, 143"
-echo -e "SSL/TLS       :$ssl"
+echo -e "SSL/TLS       : $ssl"
 echo -e "SSH WS SSL    : $ws"
 echo -e "SSH WS No SSL : $ws2"
 echo -e "Ovpn Ws       : 2086"
