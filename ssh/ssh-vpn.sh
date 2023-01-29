@@ -25,19 +25,19 @@ fi
 clear
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/lizsvr/cfnfree/main/ssh"
+akbarvpn="raw.githubusercontent.com/owl64/vpsssh_Free/main/ssh"
 
 # Link Hosting Kalian Untuk Xray
-akbarvpnn="raw.githubusercontent.com/lizsvr/cfnfree/main/xray"
+akbarvpnn="raw.githubusercontent.com/owl64/vpsssh_Free/main/xray"
 
 # Link Hosting Kalian Untuk Trojan Go
-akbarvpnnn="raw.githubusercontent.com/lizsvr/cfnfree/main/trojango"
+akbarvpnnn="raw.githubusercontent.com/owl64/vpsssh_Free/main/trojango"
 
 # Link Hosting Kalian Untuk Stunnel5
-akbarvpnnnn="raw.githubusercontent.com/lizsvr/cfnfree/main/stunnel5"
+akbarvpnnnn="raw.githubusercontent.com/owl64/vpsssh_Free/main/stunnel5"
 
 #Link Hosting Kalian Untuk Websocket
-akbarvpnnnnn="raw.githubusercontent.com/lizsvr/cfnfree/main/websocket"
+akbarvpnnnnn="raw.githubusercontent.com/owl64/vpsssh_Free/main/websocket"
 
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
