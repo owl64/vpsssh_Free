@@ -1,16 +1,28 @@
+### Terms and Condition [ Mod By owl64 ]
+
+• Dilarang keras, memperjual belikan script ini
+
+• Segala bentuk kerugian yang ditimbulkan, menjadi tanggung jawab pemakai
+
+• Dibebaskan melakuakn edit script, tapi dilarang menghilangkan sumber nama untuk SlowDNS
+
+• Ada kegagalan pada script silahkan info ke telegram, atau bisa melkukan perbaikan sendiri
+
 ### Command Install
 
 ```
 rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-get update -y && apt-get upgrade && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/lizsvr/cfnfree/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 ```
 
-### Fitur Script [ Mod By LIZ ]
+### Fitur Script [ Mod By owl64 ]
 
 • SSH & OpenVPN
 
 • SSH Websocket TLS & No TLS ( CloudFlare & CloudFront )
 
 • OHP SSH & OHP Dropbear & OHP OpenVPN
+
+• SlowDNS
 
 • Backup Data ALL Service
 
@@ -50,6 +62,8 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 
 • OHP OpenVPN             : 8383
 
+• SlowDNS                 : 53
+
  ### Server Information & Other Features
 
 • Timezone                : Asia/Jakarta (GMT +7)
@@ -76,4 +90,4 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 ------------
 **Telegram**
 ------------
-[LIZSVR](https://t.me/liz_mine)
+[owl64](https://t.me/owl64)
