@@ -40,10 +40,11 @@ slowdns="raw.githubusercontent.com/owl64/vpsssh_Free/main/sldns"
 # Link Hosting Fix sslh
 sslh-fix="https://raw.githubusercontent.com/owl64/vpsssh_Free/main/sslh-fix"
 
+# Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/owl64/vpsssh_Free/main/ipvps.txt | grep $MYIP | awk '{print $3}')
-if [ $MYIP = $MYIP ]; then
+IZIN=$( curl https://raw.githubusercontent.com/owl64/vpsssh_Free/main/ipvps.txt | grep $MYIP );
+if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
@@ -133,7 +134,7 @@ echo "   - Websocket Ovpn          : 2086"  | tee -a log-install.txt
 echo "   - OHP SSH                 : 8181"  | tee -a log-install.txt
 echo "   - OHP Dropbear            : 8282"  | tee -a log-install.txt
 echo "   - OHP OpenVPN             : 8383"  | tee -a log-install.txt
-echo "   - SlowDNS	               : 53"  | tee -a log-install.txt
+echo "   - SlowDNS	           : 53"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
 echo "   - Timezone                : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
