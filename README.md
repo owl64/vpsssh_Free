@@ -62,7 +62,7 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 
 • OHP OpenVPN             : 8383
 
-• SlowDNS                 : 53
+• SlowDNS                 : 53, All Service Port SSH, Works!!
 
  ### Server Information & Other Features
 
