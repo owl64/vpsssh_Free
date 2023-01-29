@@ -1,6 +1,6 @@
 #!/bin/bash
 # Ohp Script
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/owl64
 # ==========================================
 # Color
 RED='\033[0;31m'
