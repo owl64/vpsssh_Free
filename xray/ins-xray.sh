@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Color
 RED='\033[0;31m'
 NC='\033[0m'
@@ -9,9 +8,6 @@ BLUE='\033[0;34m'
 PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
-
-MYIP=$(wget -qO- ipinfo.io/ip);
-clear
 domain=$(cat /etc/xray/domain)
 apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y 
 apt install socat cron bash-completion ntpdate -y
