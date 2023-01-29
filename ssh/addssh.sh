@@ -45,6 +45,7 @@ ws="$(cat ~/log-install.txt | grep -w "Websocket TLS" | cut -d: -f2|sed 's/ //g'
 ws2="$(cat ~/log-install.txt | grep -w "Websocket None TLS" | cut -d: -f2|sed 's/ //g')"
 cfn=$(cat /var/lib/akbarstorevpn/cfndomain)
 nsdomain=$(cat /root/nsdomain)
+slkey=$(cat /etc/slowdns/server.pub)
 
 ssl="$(cat ~/log-install.txt | grep -w "Stunnel5" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
@@ -76,10 +77,14 @@ echo -e "Thank You For Using Our Services"
 echo -e "====== SSH & OVPN Account ======"
 echo -e "IP/Host       : $IP"
 echo -e "Domain        : ${domain}"
-echo -e "nsDomain      : ${nsdomain}"
 echo -e "CloudFront    : $cfn"
 echo -e "Username      : $Login"
 echo -e "Password      : $pass"
+echo -e ""
+echo -e "====== SlowDNS ======"
+echo -e "Domain Name System(DNS): 8.8.8.8"
+echo -e "nsDomain               : ${nsdomain}"
+echo -e "PublicKey              : ${slkey}"
 echo -e ""
 echo -e "======== Running On Port ======="
 echo -e "Dropbear      : 109, 143"
