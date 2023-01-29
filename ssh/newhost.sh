@@ -1,5 +1,4 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -11,11 +10,11 @@ PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
-#Getting
+# Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/owl64/vpsssh_Free/main/ipvps.txt | grep $MYIP | awk '{print $3}')
-if [ $MYIP = $MYIP ]; then
+IZIN=$( curl https://raw.githubusercontent.com/owl64/vpsssh_Free/main/ipvps.txt | grep $MYIP );
+if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
