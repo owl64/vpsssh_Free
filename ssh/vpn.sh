@@ -1,5 +1,4 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -26,7 +25,7 @@ clear
 # By Akbar Maulana
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/lizsvr/cfnfree/main/ssh"
+akbarvpn="raw.githubusercontent.com/owl64/vpsssh_Free/main/ssh"
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
